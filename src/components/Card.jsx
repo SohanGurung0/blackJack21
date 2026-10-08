@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Card = ({ card, index }) => {
-  const style = { transform: `translateX(${index * -30}px) translateY(${index * -5}px)`, zIndex: index, animationDelay: `${index * 0.15}s` };
+  const style = { transform: `translateY(${index * -5}px)`, zIndex: index, animationDelay: `${index * 0.15}s` };
   
   if (card.isHidden) {
     return <div className="card card-hidden" style={style}><div className="card-back-pattern" /></div>;
